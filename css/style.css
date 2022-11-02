@@ -1,8 +1,62 @@
+/* COLORI 
+#ADD8E6 azzurro header
+#DAA51F oro header
+#00188A blu scuro main
+#EE82EE rosa scuro main
+#1E90FF blu main
+#FFBFCB rosa main
+#218B22 verde main
+#F08080 salmone main
+#20B2AA turchese main
+#FFFFFF background bianco
+#D3D3D3 background grigio
+#23272A background grigio scuro
+#7EFFD4 verde footer */
+
+
 /* CSS RESET */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 22px;
 }
 
+/* UTILS */
+.flex-container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADER */
+
+header {
+    height: 100px;
+    background-color: #ADD8E6;
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+    height: 60%;
+    padding: 0 10px;
+    background-color: #DAA51F;
+    border: black dashed 2px;
+}
+
+.login {
+    justify-content: flex-end;
+}
+
+.link {
+    flex-basis: 40%;
+    justify-content: center;
+
+}
+
+span {
+    margin: 0 5px;
+}
