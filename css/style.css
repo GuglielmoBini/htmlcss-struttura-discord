@@ -24,27 +24,37 @@
 }
 
 /* UTILS */
-.flex-container-header {
+.flex {
     display: flex;
+}
+
+.center-content {
     justify-content: center;
     align-items: center;
 }
 
+.border {
+    border: #000 dashed 2px;
+}
+
+.hr {
+    height: 5px;
+    background-color: #ADD8E6;
+}
+
 /* HEADER */
 
-header {
+.nav {
     height: 100px;
     background-color: #ADD8E6;
 }
 
 .header-items {
-    display: flex;
     align-items: center;
     flex-basis: 15%;
     height: 60%;
     padding: 0 10px;
     background-color: #DAA51F;
-    border: black dashed 2px;
 }
 
 .login {
@@ -59,4 +69,16 @@ header {
 
 span {
     margin: 0 5px;
+}
+
+.blue-background {
+    height: 600px;
+    background-color: #00188A;
+}
+
+.pink-card {
+    height: 70%;
+    width: 50%;
+    background-color: #EE82EE;
+    border: black dashed 2px;
 }
