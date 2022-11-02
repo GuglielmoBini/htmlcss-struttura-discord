@@ -1,34 +1,16 @@
-/* COLORI 
-#ADD8E6 azzurro header
-#DAA51F oro header
-#00188A blu scuro main
-#EE82EE rosa scuro main
-#1E90FF blu main
-#FFBFCB rosa main
-#218B22 verde main
-#F08080 salmone main
-#20B2AA turchese main
-#FFFFFF background bianco
-#D3D3D3 background grigio
-#23272A background grigio scuro
-#7EFFD4 verde footer */
-
-
 /* CSS RESET */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 25px;
-    font-weight: 600;
 }
 
 /* UTILS */
 
-.container-white, .container-grey, .container-darkgray {
-    min-height: 800px;
-    padding: 100px 0;
+body {
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .flex {
@@ -40,10 +22,6 @@
     align-items: center;
 }
 
-.direction {
-    flex-direction: column;
-}
-
 .border-b {
     border: #000 dashed 4px;
 }
@@ -53,8 +31,13 @@
 }
 
 .hr {
-    height: 5px;
+    height: 4px;
     background-color: #ADD8E6;
+}
+
+.container-white, .container-grey, .container-darkgray {
+    min-height: 800px;
+    padding: 100px 0;
 }
 
 /* HEADER */
@@ -82,11 +65,11 @@
 
 }
 
-span {
+.link > span {
     margin: 0 5px;
 }
 
-.blue-background {
+.container-blue {
     height: 600px;
     background-color: #00188A;
 }
@@ -113,34 +96,53 @@ span {
 
 .blue-item {
     flex-basis: 1100px;
-    height: 600px;
+    min-height: 600px;
     background-color: #1E90FF;
 }
 
 .pink-item {
     flex-basis: 500px;
-    height: 600px;
+    min-height: 600px;
     background-color: #FFBFCB;
 }
 
 .green-item {
     flex-basis: 1600px;
-    height: 1000px;
+    min-height: 1000px;
     background-color: #218B22;
 }
 
 .salmon-item {
     flex-basis: 400px;
-    height: 600px;
+    min-height: 600px;
     background-color: #F08080;
 }
 
 .turquoise-item {
     flex-basis: 300px;
-    height: 600px;
+    min-height: 600px;
     background-color: #20B2AA;
 
 }
 
 /* FOOTER */
 
+.footer-container {
+    background-color: #23272A;
+    height: 150px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer-item {
+    background-color: #7EFFD4;
+    height: 70%;
+    width: 1600px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav {
+    padding: 5px;
+    background-color: #F08080;
+}
